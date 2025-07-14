@@ -35,45 +35,45 @@ const Dashboard = () => {
   },[])
 
   return (
-    <div className='flex-1 p-4 md:p-10 bg-blue-50/50'>
+    <div className='flex-1 p-4 md:p-10 dark:bg-gray-800'>
 
         <div className='flex flex-wrap gap-4'>
 
-            <div className='flex items-center gap-4 bg-white p-4 min-w-58 rounded shadow cursor-pointer hover:scale-105 transition-all'>
-                <img src={assets.dashboard_icon_1} alt="" />
+            <div className='flex items-center gap-4 dark:bg-gray-900 p-4 min-w-58 rounded shadow hover:scale-105 transition-all'>
+                <img src={assets.dashboard_icon_1} className='size-14' alt="" />
                 <div>
-                    <p className='text-xl font-semibold tetx-gray-600'>{dashboardData.blogs}</p>
-                    <p className='text-gray-400 font-light'>Blogs</p>
+                    <p className='text-xl font-semibold dark:text-gray-100'>{dashboardData.blogs}</p>
+                    <p className='dark:text-gray-300 font-light'>Blogs</p>
                 </div>
             </div>
 
-            <div className='flex items-center gap-4 bg-white p-4 min-w-58 rounded shadow cursor-pointer hover:scale-105 transition-all'>
-                <img src={assets.dashboard_icon_2} alt="" />
+            <div className='flex items-center gap-4 dark:bg-gray-900 p-4 min-w-58 rounded shadow hover:scale-105 transition-all'>
+                <img src={assets.dashboard_icon_2} className='size-14' alt="" />
                 <div>
-                    <p className='text-xl font-semibold tetx-gray-600'>{dashboardData.comments}</p>
-                    <p className='text-gray-400 font-light'>Comments</p>
+                    <p className='text-xl font-semibold dark:text-gray-100'>{dashboardData.comments}</p>
+                    <p className='dark:text-gray-300 font-light'>Comments</p>
                 </div>
             </div>
 
-            <div className='flex items-center gap-4 bg-white p-4 min-w-58 rounded shadow cursor-pointer hover:scale-105 transition-all'>
-                <img src={assets.dashboard_icon_3} alt="" />
+            <div className='flex items-center gap-4 dark:bg-gray-900 p-4 min-w-58 rounded shadow hover:scale-105 transition-all'>
+                <img src={assets.dashboard_icon_3} className='size-14' alt="" />
                 <div>
-                    <p className='text-xl font-semibold tetx-gray-600'>{dashboardData.drafts}</p>
-                    <p className='text-gray-400 font-light'>Drafts</p>
+                    <p className='text-xl font-semibold dark:text-gray-100'>{dashboardData.drafts}</p>
+                    <p className='dark:text-gray-300 font-light'>Drafts</p>
                 </div>
             </div>
         </div>
 
-        <div className='flex items-center gap-3 m-4 mt-6 text-gray-600'>
+        <div className='flex items-center gap-3 m-4 mt-6 dark:text-gray-100'>
             <div>
-                <img src={assets.dashboard_icon_4} alt="" />
+                <img src={assets.dashboard_icon_4} className='size-5' alt="" />
                 <p>Latest Blogs</p>
             </div>
         </div>
 
-        <div className='relative max-w-4xl overflow-x-auto shadow rounded-lg scrollbar-hide bg-white'>
-            <table className='w-full text-sm text-gray-500'>
-                <thead className='text-xs text-gray-600 text-left uppercase'>
+        <div className='relative max-w-4xl overflow-x-auto shadow rounded-lg scrollbar-hide dark:bg-gray-900'>
+            <table className='w-full text-sm dark:text-gray-300'>
+                <thead className='text-xs dark:text-gray-100 text-left uppercase'>
                     <tr>
                         <th scope='col' className='px-2 py-4 xl:px-6'>#</th>
                         <th scope='col' className='px-2 py-4'>Blog Title</th>

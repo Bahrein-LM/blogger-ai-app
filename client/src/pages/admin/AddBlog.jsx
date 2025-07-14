@@ -87,8 +87,8 @@ const AddBlog = () => {
   },[])
 
   return (
-    <form onSubmit={onSubmitHandler} className='flex-1 bg-blue-50/50 text-gray-600 h-full overflow-scroll'>
-      <div className='bg-white w-full max-w-3xl p-4 md:p-10 sm:m-10 shadow rounded'>
+    <form onSubmit={onSubmitHandler} className='flex-1 dark:bg-gray-800 dark:text-gray-100 h-full overflow-scroll'>
+      <div className='dark:bg-gray-900 w-full max-w-3xl p-4 md:p-10 sm:m-10 shadow rounded'>
         
         <p>Upload Thumbnail</p>
         <label htmlFor="image">
@@ -134,7 +134,7 @@ const AddBlog = () => {
             type='button'
             disabled={loading} 
             onClick={generateContent}
-            className='absolute bottom-1 right-2 ml-2 text-xs text-white bg-black/70 px-4 py-1.5 rounded hover:underline cursor-pointer'
+            className='absolute bottom-1 right-2 ml-2 text-xs text-primary bg-black/70 px-4 py-1.5 rounded hover:underline cursor-pointer'
           >
             Generate with AI
           </button>

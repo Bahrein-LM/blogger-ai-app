@@ -27,9 +27,9 @@ const Header = () => {
             <img src={assets.star_icon} alt="" className='w-2.5' />
         </div>
 
-        <h1 className='text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700'>Your Own <span className='text-primary'>Blogging</span> <br /> Platform</h1>
+        <h1 className='text-3xl sm:text-6xl font-semibold sm:leading-16 dark:text-gray-50'>Your Own <span className='text-primary'>Blogging</span> <br /> Platform</h1>
 
-        <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs text-gray-500'>
+        <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs dark:text-gray-300'>
             This is your space to think out loud, to share what matters, and to write without filters. Whether it's one word or a thousand, your story starts right here.
         </p>
 
